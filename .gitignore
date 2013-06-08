@@ -1,11 +1,10 @@
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
+node_modules
+temp
+dist
+.sass-cache
+app/bower_components
+.tmp/
+
 
 pids
 logs
