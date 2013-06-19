@@ -32,10 +32,10 @@ module.exports = function (grunt) {
         files: ['test/spec/{,*/}*.coffee'],
         tasks: ['coffee:test']
       },
-      compass: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass']
-      },
+//      compass: {
+//        files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
+//        tasks: ['compass']
+//      },
       livereload: {
         files: [
           '<%= yeoman.app %>/*.html',
@@ -163,23 +163,23 @@ module.exports = function (grunt) {
         ]
       }
     },
-    compass: {
-      options: {
-        sassDir: '<%= yeoman.app %>/styles',
-        cssDir: '.tmp/styles',
-        imagesDir: '<%= yeoman.app %>/images',
-        javascriptsDir: '<%= yeoman.app %>/scripts',
-        fontsDir: '<%= yeoman.app %>/styles/fonts',
-        importPath: 'app/bower_components',
-        relativeAssets: true
-      },
-      dist: {},
-      server: {
-        options: {
-          debugInfo: true
-        }
-      }
-    },
+//    compass: {
+//      options: {
+//        sassDir: '<%= yeoman.app %>/styles',
+//        cssDir: '.tmp/styles',
+//        imagesDir: '<%= yeoman.app %>/images',
+//        javascriptsDir: '<%= yeoman.app %>/scripts',
+//        fontsDir: '<%= yeoman.app %>/styles/fonts',
+//        importPath: 'app/bower_components',
+//        relativeAssets: true
+//      },
+//      dist: {},
+//      server: {
+//        options: {
+//          debugInfo: true
+//        }
+//      }
+//    },
     uglify: {
       dist: {
         files: {
@@ -298,7 +298,7 @@ module.exports = function (grunt) {
       'coffee:dist',
       'createDefaultTemplate',
       'handlebars',
-      'compass:server',
+//      'compass:server',
       'livereload-start',
       'connect:livereload',
       'open',
@@ -311,7 +311,7 @@ module.exports = function (grunt) {
     'coffee',
     'createDefaultTemplate',
     'handlebars',
-    'compass',
+//    'compass',
     'connect:test',
     'jasmine'
   ]);
@@ -321,7 +321,7 @@ module.exports = function (grunt) {
     'coffee',
     'createDefaultTemplate',
     'handlebars',
-    'compass:dist',
+//    'compass:dist',
     'useminPrepare',
     'imagemin',
     'htmlmin',
